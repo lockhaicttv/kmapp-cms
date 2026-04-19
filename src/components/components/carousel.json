@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_carousels",
+  "info": {
+    "displayName": "carousel",
+    "icon": "landscape"
+  },
+  "options": {},
+  "attributes": {
+    "carousel": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

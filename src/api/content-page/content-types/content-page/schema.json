@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_pages",
+  "info": {
+    "singularName": "content-page",
+    "pluralName": "content-pages",
+    "displayName": "Content Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "slots": {
+      "type": "dynamiczone",
+      "components": [
+        "components.carousel",
+        "components.banner",
+        "components.rich-text"
+      ]
+    }
+  }
+}
