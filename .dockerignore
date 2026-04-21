@@ -1,0 +1,46 @@
+# Ignore node_modules
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore build output
+.cache
+build
+
+# Ignore .git
+.git
+.gitignore
+
+# Ignore environment files (add them via docker secrets/env vars)
+.env
+.env.*
+
+# Ignore SQLite database (use external DB in production)
+.tmp
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore documentation and markdown files
+*.md
+!README.md
+
+# Ignore IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore local uploads (use volume mount or S3 in production)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Ignore test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx

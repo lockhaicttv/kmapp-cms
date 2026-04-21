@@ -1,0 +1,24 @@
+services:
+  kmapp-postgres:
+    image: postgres:16-alpine
+    container_name: kmapp-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=strapi
+      - POSTGRES_USER=kmapp
+      - POSTGRES_PASSWORD=Anchienhoang2024!
+    volumes:
+      - kmapp-postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - kmapp-network
+
+volumes:
+  kmapp-postgres-data:
+    name: kmapp-postgres-data
+
+networks:
+  kmapp-network:
+    name: kmapp-network
+    driver: bridge
